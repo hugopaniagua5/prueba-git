@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi página de prueba</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="titulo-prncipal">hola, soy hugo</h1>
+        </header>
+
+        <nav>
+            <a href="#">INICIO</a>
+            <a href="#">SOBRE MÍ</a>
+        </nav>
+
+        <main>
+            <section>
+                <h2>Sobre mí</h2>
+                <p>soy estudiante de ASIR</p>
+            </section>
+
+            <section>
+                <h2>Lo que estoy aprendiendo</h2>
+
+                <article>
+                    <h3>HTML</h3>
+                    <p>Estoy empezando con etiquetas</p>
+                </article>
+
+                <article id="programa">
+                    <h3>Git</h3>
+                    <p>Ya hice mi primer commit</p>
+                    <button> Botón de prueba</button>
+                </article>
+
+            </section>
+
+            <aside>
+                <p>Esto es información extra</p>
+            </aside>
+
+            <button id="boton-saludo" data-accion="saludar">Haz click aquí</button>
+
+        </main>
+
+        <footer>
+            <p>© Hugo</p>
+        </footer>
+<script>
+  const boton = document.getElementById("boton-saludo");
+
+  boton.addEventListener("click", function() {
+    alert("Hola Hugo 🚀");
+  });
+</script>
+    </body>
+</html>
